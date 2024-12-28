@@ -1,13 +1,3 @@
-// document.addEventListener('scroll', function() {
-//     const header = document.querySelector('.header');
-//     const headerPosition = header.getBoundingClientRect().top;
-//     const screenPosition = window.innerHeight / 1.3;
-
-//     if (headerPosition < screenPosition) {
-//         header.classList.add('visible');
-//     }
-// });
-
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -32,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     observer.observe(document.querySelector('#footer-section'));
 });
-
 
 document.addEventListener('scroll', function() {
     const header = document.querySelector('.header');
@@ -99,12 +88,6 @@ themes.forEach(theme => {
     theme.addEventListener('mouseleave', () => {
         theme.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
     });
-});
-
-// Parallax effect for background
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    document.body.style.backgroundPositionY = -(scrolled * 0.5) + 'px';
 });
 
 // Enhanced countdown animation
@@ -196,4 +179,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: 'smooth'
         });
     });
+});
+
+// Add scroll event listener
+window.addEventListener('scroll', function() {
+    const blurBackground = document.querySelector('.blur-background');
+    
+    // Add blur effect after scrolling 100px
+    if (window.scrollY > 80) {
+        blurBackground.style.opacity = '1';
+    } else {
+        blurBackground.style.opacity = '0';
+    }
 });

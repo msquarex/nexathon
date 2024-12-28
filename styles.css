@@ -13,16 +13,13 @@ body {
     overflow-x: hidden;
     margin: 0;
     font-family: 'Orbitron', sans-serif;
-    background: url("./imagess/bckgnd.jpg") repeat center center fixed;
+    background: url("./imagess/bckgnd.jpg") no-repeat center center fixed;
     background-size: cover;
+    background-attachment: fixed;
     color: #ffffff;
     text-align: center;
     transition: background-color 0.3s ease;
     text-shadow: 0 0 5px #070707, 0 0 10px #070707;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    
-
 }
 
 .blur-background {
