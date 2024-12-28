@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Nexathon</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="blur-background"></div>
+    <div class="container">
+
+        <!-- Header -->
+         <div>
+            <header class="header">
+                <div class="logo">
+                    <img src="./imagess/nexus_logo.jpeg" alt="Nexus VIT Logo" class="logo-img">
+                </div>
+                
+                <!-- Add hamburger button -->
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Add mobile-nav class -->
+                <nav class="nav mobile-nav">
+                    <a href="#about">About</a>
+                    <a href="#sponsors">Sponsors</a>
+                    <a href="#prizes">Prizes</a>
+                    <a href="#themes">Themes</a>
+                    <a href="#timeline">Timeline</a>
+                    <a href="#faq">FAQs</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </header>
+            <main class="flex flex-col items-center text-center mt-16 px-4">
+                <img src="./imagess/nexathon-logo.png" alt="Random Image" class="responsive-image">
+                <div class="bg-black bg-opacity-50 px-4 py-2 rounded-full mb-4">
+                    <span class="text-white">hosted by NEXUS</span>
+                </div>
+                <p class="sub-title mt-4">24-HOUR NATIONAL LEVEL HACKATHON</p>
+                <p class="sub-title flex items-center mt-2 name">
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    <span>VIT University, Chennai</span>
+                </p>
+                <button class="register-button mt-8">REGISTER NOW</button>
+            </main>
+            <div class="countdown-container">
+                <p class="hackathon-info">VIT's LARGEST STUDENT-DRIVEN HACKATHON</p>
+                <h1 class="hackathon-title">"Code Your Way to Victory!"</h1>
+                <p class="registration-ends">REGISTRATION STARTS IN</p>
+                <div class="countdown-timer">
+                    <div class="time-block">
+                        <span id="days" class="time">00</span>
+                        <span class="label">DAYS</span>
+                    </div>
+                    <span class="separator">:</span>
+                    <div class="time-block">
+                        <span id="hours" class="time">00</span>
+                        <span class="label">HOURS</span>
+                    </div>
+                    <span class="separator">:</span>
+                    <div class="time-block">
+                        <span id="minutes" class="time">00</span>
+                        <span class="label">MINUTES</span>
+                    </div>
+                    <span class="separator">:</span>
+                    <div class="time-block">
+                        <span id="seconds" class="time">00</span>
+                        <span class="label">SECONDS</span>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+        <!-- Sponsors -->
+        <div class="sponsor-body" id="sponsors">
+            <div class="sponsor-heading-container">
+                <h1>Sponsors</h1>
+            </div>
+            <div class="sponsors">
+                <h2>We are looking for Sponsors!</h2>
+            </div>
+            <a href="#" class="sponsor-button" target="_blank">Become a Sponsor</a>
+        </div>
+
+        <!-- PrizePool -->
+        <div id="prizes" class="prize-section">
+            <div class="prize-pool-box">
+                <h2>✧ Prize Pool ✧</h2>
+                <p>₹30,000</p>
+            </div>
+            
+            <div class="prize-tier-container">
+                <div class="prize-tier-box red">
+                    <h3>✧ First Prize ✧</h3>
+                    <p>₹15,000</p>
+                </div>
+                <div class="prize-tier-box blue">
+                    <h3>✧ Second Prize ✧</h3>
+                    <p>₹10,000</p>
+                </div>
+                <div class="prize-tier-box green">
+                    <h3>✧ Third Prize ✧</h3>
+                    <p>₹5,000</p>
+                </div>
+            </div>
+        
+            <div class="special-award-container">
+                <div class="special-award-box">
+                    <h3>✦ Best Women's Team ✦</h3>
+                </div>
+                <div class="special-award-box">
+                    <h3>✦ Best Woman Coder ✦</h3>
+                </div>
+            </div>
+        </div>
+
+         <!-- Timeline and FAQs -->
+        <div id="timeline">
+            <header>
+                <div class="heading-container">
+                    <h1>Timeline</h1>
+                </div>
+            </header>
+        
+            <section class="timeline-container">
+                <div class="registration-box left">
+                    <span class="registration-text">Registration STARTS</span>
+                    <span class="registration-date">10th January 2025</span>
+                </div>
+                <div class="line-connector"></div>
+                <div class="registration-box right">
+                    <span class="registration-text">Registration ENDS</span>
+                    <span class="registration-date">8th February 2025</span>
+                </div>
+                <div class="line-connector"></div>
+                <div class="registration-box left">
+                    <span class="registration-text">Hackathon STARTS</span>
+                    <span class="registration-date">9am | 10th February 2025</span>
+                </div>
+                <div class="line-connector"></div>
+                <div class="registration-box right">
+                    <span class="registration-text">Hackathon ENDS</span>
+                    <span class="registration-date">9am | 11th February 2025</span>
+                </div>
+                <div class="line-connector"></div>
+                <div class="registration-box left">
+                    <span class="registration-text">Announcement of Winners</span>
+                    <span class="registration-date">10am | 11th February 2025</span>
+                </div>
+            </section>
+            <div class="faq" id="faq">
+            <header>
+                <div class="heading-container">
+                    <h1>FAQs</h1>
+                </div>
+            </header>
+        
+            <section class="faq-box-container">
+                <div class="faq-box">
+                    <div class="front">Where will the hackathon be held?</div>
+                    <div class="back">
+                        <span class="faq-info">The hackathon will be held at VIT Chennai.</span>
+                    </div>
+                </div>
+                <div class="faq-box">
+                    <div class="front">Who can participate in this hackathon?</div>
+                    <div class="back">
+                        <span class="faq-info">PENDING</span>
+                    </div>
+                </div>
+                <div class="faq-box">
+                    <div class="front">What is the theme of this hackathon?</div>
+                    <div class="back">
+                        <span class="faq-info">The theme is innovation in blockchain, cybersecurity, fintech, etc.</span>
+                    </div>
+                </div>
+                <div class="faq-box">
+                    <div class="front">Should each team member submit the application separately?</div>
+                    <div class="back">
+                        <span class="faq-info">Only the team leader should submit the application on behalf of the team</span>
+                    </div>
+                </div>
+                <div class="faq-box">
+                    <div class="front">How are winners selected?</div>
+                    <div class="back">
+                        <span class="faq-info">Winners will be selected by a panel of judges with diverse backgrounds and extensive experience in their respective fields.</span>
+                    </div>
+                </div>
+                <div class="faq-box">
+                    <div class="front">How do I become a sponsor for Nexathon'25?</div>
+                    <div class="back">
+                        <span class="faq-info">Head over to the Sponsors section above! We're looking forward to working with you.</span>
+                    </div>
+                </div>
+            </section>
+            </div>
+        </div>
+        
+        <!-- About -->
+        <div class="about" id="about">
+                <h1 class="animate">
+                 WHAT IS NEXATHON'25?
+                </h1>
+                <div class="card animate">
+                 <p>
+                  Nexathon 2025, a 24-hour national-level hackathon organized by Nexus Tech Club of VIT Chennai, scheduled for February 10-11, 2025. Nexathon focuses on the Open Innovation Challenge, providing a platform for creative minds to ideate, innovate, and solve real-world problems. This event will bring together students, developers, and tech enthusiasts from across India.
+                 </p>
+                </div>
+                <h1 class="animate">
+                <div class="themes-section" id="themes">
+                 OUR THEMES
+                </h1>
+                <div class="handwritten-card">
+                 <h1 class="handwritten animate">
+                  OPEN INNOVATION
+                 </h1>
+                </div>
+                
+                 <div class="themes-container">
+                  <div class="theme animate">
+                   <img alt="Blockchain icon" src="imagess/blockchain-B0lR7QS9.webp"/>
+                   <h3>
+                    Blockchain 
+                   </h3>
+                  </div>
+                  <div class="theme animate">
+                   <img alt="EdTech icon" src="imagess/edtech-Do_Oc5Am.webp"/>
+                   <h3>
+                    EdTech
+                   </h3>
+                  </div>
+                  <div class="theme animate">
+                   <img alt="FinTech icon" src="imagess/fin_tech-CTAdZ42z.webp"/>
+                   <h3>
+                    FinTech
+                   </h3>
+                  </div>
+                  <div class="theme animate">
+                   <img alt="HealthTech icon" src="imagess/Untitled.webp"/>
+                   <h3>
+                    HealthTech
+                   </h3>
+                  </div>
+                  <div class="theme animate">
+                   <img alt="Cyber Security icon" src="imagess/v1_-The-Convergence-of-Cybersecurity-and-Everything-removebg.png"/>
+                   <h3>
+                    Cyber Security
+                   </h3>
+                  </div>
+                  <div class="theme animate">
+                   <img alt="AI & ML icon" src="imagess/ai.png"/>
+                   <h3>
+                    AI & ML
+                   </h3>
+                  </div>
+                 </div>
+                </div>
+                <div class="card1 animate">
+                 <p>
+                  In terms of technologies, NEXATHON'25 will leverage the emerging technologies and technologies of tomorrow. These themes and technologies provide a broad scope for participants to explore and develop innovative solutions that address real-world challenges in various domains.
+                 </p>
+                </div>
+                <!-- about nexus -->
+                <div class="outer-box">
+                 <div class="background-map"></div>
+                 <div class="container">
+                  <div class="section-header">
+                   BIGGER, BETTER AND BEYOND LIMITS
+                  </div>
+                  <div class="subheader">
+                   After the phenomenal success of V-MEDITHON, we are thrilled to announce that we are back, bigger, better, and bolder than ever! NEXATHON'25 is here to push the boundaries of creativity, collaboration, and cutting-edge technology.
+                  </div>
+                  <div class="images">
+                   <div class="marquee">
+                    <div class="marquee-content">
+                     <img alt="Group photo" height="150" src="imagess/DSC01991.JPG" width="200"/>
+                     <img alt="Team working" height="150" src="imagess/DSC01996.JPG" width="200"/>
+                     <img alt="Participants" height="150" src="imagess/IMG-20240930-WA0042.jpg" width="200"/>
+                     <img alt="Team presenting" height="150" src="imagess/WhatsApp Image 2024-09-30 at 16.32.26_872fb81f.jpg" width="200"/>
+                     <img alt="Group photo" height="150" src="imagess/WhatsApp Image 2024-09-30 at 16.32.54_9bee551c.jpg" width="200"/>
+                     <img alt="Team celebrating" height="150" src="imagess/WhatsApp Image 2024-09-30 at 16.33.03_c9d52f37.jpg" width="200"/>
+                     <img alt="Group photo" height="150" src="imagess/DSC01991.JPG" width="200"/>
+                     <img alt="Team working" height="150" src="imagess/DSC01996.JPG" width="200"/>
+                     <img alt="Participants" height="150" src="imagess/IMG-20240930-WA0042.jpg" width="200"/>
+                     <img alt="Team presenting" height="150" src="imagess/WhatsApp Image 2024-09-30 at 16.32.26_872fb81f.jpg" width="200"/>
+                     <img alt="Group photo" height="150" src="imagess/WhatsApp Image 2024-09-30 at 16.32.54_9bee551c.jpg" width="200"/>
+                     <img alt="Team celebrating" height="150" src="imagess/WhatsApp Image 2024-09-30 at 16.33.03_c9d52f37.jpg" width="200"/>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="gap"></div>
+                  <div class="images">
+                   <div class="marquee-reverse">
+                    <div class="marquee-content">
+                     <img alt="Team celebrating" height="150" src="imagess/DSC02011.JPG" width="200"/>
+                     <img alt="Group photo" height="150" src="imagess/DSC02034.JPG" width="200"/>
+                     <img alt="Team presenting" height="150" src="imagess/WhatsApp Image 2024-09-30 at 16.32.41_60e8738e.jpg" width="200"/>
+                     <img alt="Participants" height="150" src="imagess/IMG-20240930-WA0103.jpg" width="200"/>
+                     <img alt="Team working" height="150" src="imagess/WhatsApp Image 2024-09-30 at 16.32.33_078dbe4b.jpg" width="200"/>
+                     <img alt="Group photo" height="150" src="imagess/DSC02018.JPG" width="200"/>
+                     <img alt="Team celebrating" height="150" src="imagess/DSC02011.JPG" width="200"/>
+                     <img alt="Group photo" height="150" src="imagess/DSC02034.JPG" width="200"/>
+                     <img alt="Team presenting" height="150" src="imagess/WhatsApp Image 2024-09-30 at 16.32.41_60e8738e.jpg" width="200"/>
+                     <img alt="Participants" height="150" src="imagess/IMG-20240930-WA0103.jpg" width="200"/>
+                     <img alt="Team working" height="150" src="imagess/WhatsApp Image 2024-09-30 at 16.32.33_078dbe4b.jpg" width="200"/>
+                     <img alt="Group photo" height="150" src="imagess/DSC02018.JPG" width="200"/>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="footer">
+                   <div class="footer-text">
+                    NEXUS
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               
+        </div>
+
+        <!-- Footer -->
+        <div class="footer" id="contact">
+            <div class="overlay"></div>
+            <div class="container fade-in" id="footer-section">
+                <div class="border-top">
+                    <div class="border-bottom">
+                        <div class="flex-wrap">
+                            <!-- Ask Us Section -->
+                            <div class="column">
+                                <h2>Ask Us</h2>
+                                <form>
+                                    <div>
+                                        <input type="email" placeholder="Your Email" required/>
+                                    </div>
+                                    <div>
+                                        <textarea placeholder="Queries" required></textarea>
+                                    </div>
+                                    <button type="submit">Send</button>
+                                </form>
+                            </div>
+        
+                            <!-- Quick Links Section -->
+                            <div class="column">
+                                <h2>Quick Links</h2>
+                                <div class="quick-links">
+                                    <a href="#">Sponsors</a>
+                                    <a href="#">FAQs</a>
+                                    <a href="#">Prizes</a>
+                                    <a href="#">Timeline</a>
+                                    <a href="#">Themes</a>
+                                    <a href="#">Brochure</a>
+                                    <a href="#">About</a>
+                                    <a href="#">Call for Mentors</a>
+                                </div>
+                            </div>
+        
+                            <!-- Get in Touch Section -->
+                            <div class="column" style="border-right: none;">
+                                <h2>Get in Touch</h2>
+                                <div class="social-icons">
+                                    <a href="mailto:nexusvitc@gmail.com" class="icon"><i class="fas fa-envelope"></i></a>
+                                    <a href="https://www.instagram.com/nexus.vitc/" class="icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/company/nexusvitchennai/" class="icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://nexusvit.com" class="icon" target="_blank"><i class="fas fa-globe"></i></a>
+                                </div>
+                                
+                                <hr>
+                                
+                                <h2>Contact Us</h2>
+                                <div class="contact-info">
+                                    <div>
+                                        <p class="text-bold">Vivek Gautam</p>
+                                        <p class="text-bold">+91 7902171779</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-bold">Shivam Raj</p>
+                                        <p class="text-bold">+91 6284786375</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Footer Credits -->
+                <div class="credits">
+                    <p class="text-xl">© Nexus Tech Club, VIT Chennai 2025, All Rights Reserved</p>
+                    <p class="text-xs" style="margin-top: 0.5rem;">
+                        - <a href="https://www.linkedin.com/in/aryankotwal/" target="_blank">Aryan</a> | 
+                        <a href="https://www.linkedin.com/in/akhila-ps" target="_blank">Akhila</a> | 
+                        <a href="https://www.linkedin.com/in/pratikbangerwa/" target="_blank">Pratik</a> | 
+                        <a href="https://www.linkedin.com/in/adityaraj-shrivastava-72a102293/" target="_blank">Adityaraj</a> | 
+                        <span>Frontend Team - Nexus Club, VITC</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="index.js">
+        
+    </script>
+</body>
+</html>
