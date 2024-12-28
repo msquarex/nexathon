@@ -416,11 +416,12 @@ p {
 .images img:hover {
     transform: scale(1.1);
 }
+
 .footer {
     margin-top: -20px;
     padding-top: 20px;
     font-family: 'Orbitron', sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #ffffff;
     background-color: #0a1a2a;
     padding: 10px;
@@ -438,7 +439,7 @@ p {
     color: #0a1a2a;
     border-radius: 10px;
     font-family: 'Orbitron', sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
     transform: translateY(25%);
 }
 .marquee {
