@@ -61,7 +61,7 @@ function startCountdown(endDate) {
     updateCountdown();
 }
 
-const countdownEndDate = new Date("2024-12-31T23:59:59").getTime();
+const countdownEndDate = new Date("2025-02-11T23:59:59").getTime();
 startCountdown(countdownEndDate);
 
 // Add smooth scroll for navigation
