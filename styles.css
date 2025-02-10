@@ -2105,14 +2105,24 @@ body.menu-open {
 }
 
 .sponsor-card {
+    width: 100%; /* Added to ensure card takes full width */
+    max-width: 800px; /* Added maximum width constraint */
+    padding: 20px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
-    padding: 30px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
     border: 1px solid rgba(0, 255, 255, 0.1);
     backdrop-filter: blur(10px);
+}
+
+.sponsor-image {
+    width: 100%; /* Changed from max-width to width */
+    height: auto;
+    display: block; /* Added to remove any extra spacing */
+    margin: 0 auto; /* Center the image */
+    transition: transform 0.5s ease;
 }
 
 .sponsor-card:hover {
@@ -2121,29 +2131,25 @@ body.menu-open {
     box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
 }
 
-.sponsor-image {
-    max-width: 600px; /* Increased from 300px */
-    height: auto;
-    transition: transform 0.5s ease;
-}
-
-.sponsor-card:hover .sponsor-image {
-    transform: scale(1.05);
-}
-
 /* Media Queries for Sponsors Section */
 @media (max-width: 768px) {
     .sponsors-grid {
         padding: 10px;
     }
-
-    .sponsor-image {
-        max-width: 400px; /* Increased from 200px */
+    
+    .sponsor-card {
+        padding: 15px;
+        max-width: 90%; /* Adjusted for tablet screens */
     }
 }
 
 @media (max-width: 480px) {
-    .sponsor-image {
-        max-width: 300px; /* Increased from 150px */
+    .sponsor-card {
+        padding: 10px;
+        max-width: 95%; /* Adjusted for mobile screens */
+    }
+    
+    .sponsors-section {
+        padding: 20px 10px;
     }
 }
