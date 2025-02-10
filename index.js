@@ -42,7 +42,7 @@ function startCountdown(endDate) {
 
         if (distance < 0) {
             clearInterval(timer);
-            document.querySelector(".countdown-timer").innerHTML = "REGISTRATION CLOSED!";
+            document.querySelector(".countdown-timer").innerHTML = "EVENT STARTED!";
             return;
         }
 
@@ -61,7 +61,7 @@ function startCountdown(endDate) {
     updateCountdown();
 }
 
-const countdownEndDate = new Date("2025-02-11T23:59:59").getTime();
+const countdownEndDate = new Date("2025-02-10T09:00:00").getTime();
 startCountdown(countdownEndDate);
 
 // Add smooth scroll for navigation
